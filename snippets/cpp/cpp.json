@@ -315,6 +315,16 @@
       ],
       "description": "auto function and trailing return"
     },
+    "ifass": {
+      "prefix": "ifvalue",
+      "body": [
+        "if (this->${1:value} != ${1:value}) {",
+        "  this->${1:value} = ${1:value};",
+        "  this->update();",
+        "}"
+      ],
+      "description": "auto function and trailing return"
+    },
     "P console": {
     "prefix": "header",
     "body": [
