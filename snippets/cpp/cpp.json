@@ -315,6 +315,24 @@
       ],
       "description": "auto function and trailing return"
     },
+    "hcc": {
+      "prefix": "hcc",
+      "body": [
+        "#ifndef ${TM_FILENAME_BASE/(.*)/${1:/upcase}/}_H_",
+        "#define ${TM_FILENAME_BASE/(.*)/${1:/upcase}/}_H_",
+        "",
+        "#ifdef __cplusplus",
+        "extern \"C\" {",
+        "#endif",
+        "",
+        "#ifdef __cplusplus",
+        "}",
+        "#endif",
+        "$0",
+        "#endif // ${TM_FILENAME_BASE/(.*)/${1:/upcase}/}_H_"
+      ],
+      "description": "auto function and trailing return"
+    },
     "P console": {
     "prefix": "header",
     "body": [
