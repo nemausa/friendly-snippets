@@ -329,7 +329,7 @@
         "}",
         "#endif",
         "$0",
-        "#endif // ${TM_FILENAME_BASE/(.*)/${1:/upcase}/}_H_"
+        "#endif  // ${TM_FILENAME_BASE/(.*)/${1:/upcase}/}_H_"
       ],
       "description": "auto function and trailing return"
     },
