@@ -318,6 +318,18 @@
     "hcc": {
       "prefix": "hcc",
       "body": [
+        "/**",
+        " * @file $TM_FILENAME",
+        " *",
+        " * @brief This message displayed in Doxygen Files index",
+        " *",
+        " * @ingroup PackageName",
+        " * (note: this needs exactly one @defgroup somewhere)",
+        " *",
+        " * @date	$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE-$CURRENT_HOUR-$CURRENT_MINUTE",
+        " * @author Nemausa",
+        " *",
+        " */",
         "#ifndef ${TM_FILENAME_BASE/(.*)/${1:/upcase}/}_H_",
         "#define ${TM_FILENAME_BASE/(.*)/${1:/upcase}/}_H_",
         "",
